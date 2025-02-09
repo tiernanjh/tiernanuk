@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<h1>TKMAXX.com Find Item Online</h1>
+<p>Enter the Department and Style codes into the search box to find item online. Format: DDSSSSSS. If item is available online, item details will be shown. If item is not available online, a Sold Out or Not Found page will be shown. Where an item is sold out online, the website URL may still show the item description which can be used to verify ticket authenticity.</p>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TKMaxx.com SKU Search</title>
+    <title>TKMaxx.com Find Item Online</title>
     <script>
         function redirectToTKMaxx() {
             var searchTerm = document.getElementById('searchInput').value;
@@ -16,8 +18,8 @@
 </head>
 <body>
     <form onsubmit="event.preventDefault(); redirectToTKMaxx();">
-        <label for="searchInput">D,S:</label>
-        <input type="text" id="searchInput" placeholder="11222222" required>
+        <label for="searchInput">Enter code:</label>
+        <input type="text" id="searchInput" placeholder="00000000" required>
         <button type="submit">Search</button>
     </form>
 </body>
